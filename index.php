@@ -11,7 +11,7 @@
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <header>
-            <nav class="navbar navbar-expand-md navbar-light container" aria-label="Main navigation">
+            <nav class="navbar navbar-expand-md navbar-dark container" aria-label="Main navigation">
                 <a class="navbar-brand text-white" href="#home">Patricia P. Jacinto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,13 +19,13 @@
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto text-white">
                         <li class="nav-item">
-                            <a class="nav-link" href="#work">Selected work</a>
+                            <a class="nav-link text-white" href="#work">Selected work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Certificates</a>
+                            <a class="nav-link text-white" href="#about">Certificates</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link contact-link" href="#contact">Let’s talk ↗</a>
+                            <a class="nav-link contact-link text-white" href="#contact">Let’s talk ↗</a>
                         </li>
                     </ul>
                 </div>
@@ -35,9 +35,9 @@
             <span class="sidebar-label d-block mb-3">Portfolio</span>
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link active" href="#home" aria-current="location">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work">Selected work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Certificates</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#work">Selected work</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#about">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <main id="main">
