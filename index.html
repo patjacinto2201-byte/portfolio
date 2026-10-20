@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Patricia's creative portfolio — design, web projects, and creative experiments.">
+        <title>Patricia — Creative Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=1792527680">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark container" aria-label="Main navigation">
+                <a class="navbar-brand" href="#home">patricia<span>®</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Selected work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-link" href="#contact">Let’s talk ↗</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <nav class="section-sidebar position-fixed p-3" aria-label="Page sections">
+            <span class="sidebar-label d-block mb-3">Portfolio</span>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link active" href="#home" aria-current="location">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Selected work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <section class="welcome-screen container min-vh-100 d-flex flex-column justify-content-start pb-5" id="home" aria-labelledby="welcome-title">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                    <h1 class="mb-4 welcome-heading" id="welcome-title">welcome</h1>
+                    <div class="col-8 col-sm-6 col-md-4 mb-4">
+                        <img class="img-fluid d-block mx-auto rounded" src="assets/img/portrait.png" alt="Portrait of Patricia" fetchpriority="high">
+                    </div>
+                                            <a class="btn btn-dark rounded-pill mb-4" href="assets/resume.pdf" download="Patricia-Resume.pdf">Download resume <span aria-hidden="true">&darr;</span></a>
+                                        <a class="small" href="#work">SCROLL TO DISCOVER &darr;</a>
+                </div>
+            </section>
+            <section id="work" class="work-section min-vh-100">
+                <div class="container">
+                    <div class="section-top">
+                        <div>
+                            <p class="eyebrow">01 / THE PORTFOLIO</p>
+                            <h2>my <em>Designs.</em></h2>
+                        </div>
+                        <p>A few ideas brought to life.<br>A selection of my creative designs.</p>
+                    </div>
+                    <div class="filters" role="group" aria-label="Filter projects">
+                        <button class="filter active" data-filter="all" aria-pressed="true">
+                            All projects
+                            <span>03</span>
+                        </button>
+                        <button class="filter" data-filter="web" aria-pressed="false">
+                            Web design
+                        </button>
+                        <button class="filter" data-filter="graphic" aria-pressed="false">
+                            Graphic design
+                        </button>
+                        <button class="filter" data-filter="nails" aria-pressed="false">Nail design</button>
+                    </div>
+                    <div class="row project-grid">
+                        <article class="col-md-6 project-item" data-category="nails">
+                            <button class="project-preview project-image-preview" data-project="nails" aria-label="View Red &amp; Pink Nail Art">
+                                <img src="assets/img/des1.jpeg" alt="Red and pink nail art with polka dots and silver bow accents" class="project-image" loading="lazy">
+                                <span class="preview-arrow" aria-hidden="true">↗</span>
+                            </button>
+                            <div class="project-caption">
+                                <div>
+                                    <h3>Red &amp; Pink Nail Art</h3>
+                                    <p>Nail design · Polka dots &amp; bow accents</p>
+                                </div>
+                                <span>01</span>
+                            </div>
+                        </article>
+                        <article class="col-md-6 project-item" data-category="graphic">
+                            <button class="project-preview project-image-preview" data-project="graphic" aria-label="View Anime Graphic">
+                                <img src="assets/img/des2.jpeg" alt="Anime character graphic with a deep red background and script typography" class="project-image" loading="lazy">
+                                <span class="preview-arrow" aria-hidden="true">↗</span>
+                            </button>
+                            <div class="project-caption">
+                                <div>
+                                    <h3>Anime Graphic</h3>
+                                    <p>Graphic design · Digital composition</p>
+                                </div>
+                                <span>02</span>
+                            </div>
+                        </article>
+                        <article class="col-12 project-item" data-category="web">
+                            <button class="project-preview project-image-preview" data-project="cafe" aria-label="View Klasik Grounds">
+                                <img src="assets/img/des3.jpeg" alt="Klasik Grounds cafe website design" class="project-image" loading="lazy">
+                                <span class="preview-arrow" aria-hidden="true">↗</span>
+                            </button>
+                            <div class="project-caption">
+                                <div>
+                                    <h3>Klasik Grounds</h3>
+                                    <p>Web design · Cafe website</p>
+                                </div>
+                                <span>03</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section container min-vh-100" id="about" aria-labelledby="certificates-title">
+                <div class="row align-items-end mb-4">
+                    <div class="col-lg-6">
+                        <p class="eyebrow">02 / CERTIFICATES</p>
+                        <h2 id="certificates-title"><em>Certificates.</em></h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="certificate-intro">A collection of my learning milestones. Select a certificate to open the original PDF in a new tab.</p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/Getting_Started_with_Cisco_Packet_Tracer_certificate_patjacinto2201-gmail-com_22b50027-8b57-4acd-a2f3-2e40bfff7c26%20(1).pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Getting Started with Cisco Packet Tracer PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>Getting Started with Cisco Packet Tracer</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/Introduction_to_IoT_certificate_patjacinto2201-gmail-com_3a011f6c-f6c5-4daa-8832-778c799631da%20(1)%20(1).pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Introduction to IoT PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>Introduction to IoT</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/tesda1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open TESDA Certificate 1 PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>TESDA Certificate 1</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/tesda2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open TESDA Certificate 2 PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>TESDA Certificate 2</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/tesda3.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open TESDA Certificate 3 PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>TESDA Certificate 3</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/tesda4.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open TESDA Certificate 4 PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>TESDA Certificate 4</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <a class="certificate-card" href="assets/img/tesda5.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open TESDA Certificate 5 PDF in a new tab">
+                                <span class="certificate-type">CERTIFICATE · PDF</span>
+                                <h3>TESDA Certificate 5</h3>
+                                <span class="certificate-action">View certificate <span aria-hidden="true">↗</span></span>
+                            </a>
+                        </div>
+                </div>
+            </section>
+            <section id="contact" class="contact-section min-vh-100 d-flex flex-column justify-content-center">
+                <div class="container">
+                    <p class="eyebrow">03 / GOOD THINGS START WITH A HELLO</p>
+                    <h2>Have something<br>in <em>mind?</em> <span>↗</span></h2>
+                    <div class="contact-bottom">
+                        <p>Let’s make something thoughtful together.</p>
+                        <div>
+                            <a class="btn btn-dark rounded-pill" href="mailto:patjacinto@gmail.com">Say hello ↗</a>
+                            <small class="email-note">patjacinto@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container site-footer">
+            <a class="footer-brand" href="#home">patricia.</a>
+            <span>© 2026 Patricia. Made with intention.</span>
+            <a href="#home">Back to top ↑</a>
+        </footer>
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="eyebrow mb-0">SELECTED DESIGN</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="projectTitle"></h2>
+                        <img id="projectImage" class="img-fluid mb-4" alt="">
+                        <p id="projectDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="assets/js/main.js?v=1792525142">
+        </script>
+    </body>
+</html>
