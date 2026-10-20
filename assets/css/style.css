@@ -961,6 +961,7 @@ h2 {
     box-shadow: inset 3px 0 var(--accent), 0 0 12px #a15be62b;
 }
 .project-preview, .certificate-card {
+    position: relative;
     border-radius: 12px;
     box-shadow: 0 0 0 1px #453053;
     transition: box-shadow .25s, transform .25s, background-color .25s;
@@ -968,7 +969,7 @@ h2 {
 .project-preview:hover, .project-preview:focus-visible,
 .certificate-card:hover, .certificate-card:focus-visible {
     box-shadow: var(--glow);
-    outline: 2px solid var(--accent);
+    outline: 2px solid transparent;
     outline-offset: 0;
     transform: translateY(-4px);
 }
@@ -984,3 +985,40 @@ h2 {
 .modal-header { border-bottom-color: #453053; }
 .modal .close { color: var(--ink); text-shadow: none; opacity: .85; }
 .skip-link { background: var(--accent-strong); }
+
+/* Animate the border's light without rotating the card or its contents. */
+@property --card-glow-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.project-preview::after, .certificate-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: conic-gradient(from var(--card-glow-angle),
+        #7940c4, #be83ff 20%, #fff 30%, #be83ff 40%,
+        #7940c4 50%, #be83ff 70%, #fff 80%, #be83ff 90%, #7940c4);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.project-preview:hover::after, .project-preview:focus-visible::after,
+.certificate-card:hover::after, .certificate-card:focus-visible::after {
+    opacity: 1;
+    animation: card-glow-spin 3s linear infinite;
+}
+
+@keyframes card-glow-spin {
+    to { --card-glow-angle: 360deg; }
+}
+
