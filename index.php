@@ -12,12 +12,12 @@
         <a class="skip-link" href="#main">Skip to content</a>
         <header>
             <nav class="navbar navbar-expand-md navbar-light container" aria-label="Main navigation">
-                <a class="navbar-brand text-white" href="#home">Patricia P. Jacinto<span>®</span></a>
+                <a class="navbar-brand text-white" href="#home">Patricia P. Jacinto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto text-white">
                         <li class="nav-item">
                             <a class="nav-link" href="#work">Selected work</a>
                         </li>
