@@ -11,8 +11,8 @@
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark container" aria-label="Main navigation">
-                <a class="navbar-brand" href="#home">patricia<span>®</span></a>
+            <nav class="navbar navbar-expand-md navbar-light container" aria-label="Main navigation">
+                <a class="navbar-brand" href="#home">Patricia P. Jacinto<span>®</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,12 +47,6 @@
                     <div class="col-8 col-sm-6 col-md-4 mb-4">
                         <img class="img-fluid d-block mx-auto rounded" src="assets/img/portrait.png" alt="Portrait of Patricia" fetchpriority="high">
                     </div>
-                    <?php if (is_file(__DIR__ . '/assets/resume.pdf')): ?>
-                        <a class="btn btn-dark rounded-pill mb-4" href="assets/resume.pdf" download="Patricia-Resume.pdf">Download resume <span aria-hidden="true">&darr;</span></a>
-                    <?php else: ?>
-                        <button class="btn btn-dark rounded-pill mb-2" type="button" disabled aria-describedby="resume-status">Download resume <span aria-hidden="true">&darr;</span></button>
-                        <p class="small text-muted mb-4" id="resume-status">Resume coming soon.</p>
-                    <?php endif; ?>
                     <a class="small" href="#work">SCROLL TO DISCOVER &darr;</a>
                 </div>
             </section>
@@ -191,7 +185,6 @@
                         <p>Let’s make something thoughtful together.</p>
                         <div>
                             <a class="btn btn-dark rounded-pill" href="mailto:patjacinto@gmail.com">Say hello ↗</a>
-                            <small class="email-note">patjacinto@gmail.com</small>
                         </div>
                     </div>
                 </div>
