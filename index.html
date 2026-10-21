@@ -47,6 +47,7 @@
                     <div class="col-8 col-sm-6 col-md-4 mb-4">
                         <img class="img-fluid d-block mx-auto rounded" src="assets/img/portrait.png" alt="Portrait of Patricia" fetchpriority="high">
                     </div>
+                    <a class="btn btn-dark rounded-pill mb-4" href="assets/resume.pdf" download="Patricia-Jacinto-Resume.pdf">Download resume <span aria-hidden="true">&darr;</span></a>
                     <a class="small" href="#work">SCROLL TO DISCOVER &darr;</a>
                 </div>
             </section>
