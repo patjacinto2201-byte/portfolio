@@ -5,27 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Patricia's creative portfolio — design, web projects, and creative experiments.">
         <title>Patricia — Creative Portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css?v=<?php echo filemtime(__DIR__ . '/assets/css/style.css'); ?>">
     </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark container" aria-label="Main navigation">
-                <a class="navbar-brand text-white" href="#home">Patricia P. Jacinto</a>
+            <nav class="navbar navbar-expand-md navbar-light container" aria-label="Main navigation">
+                <a class="navbar-brand" href="#home">Patricia P. Jacinto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto text-white">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#work">Selected work</a>
+                            <a class="nav-link" href="#work">Selected work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#about">Certificates</a>
+                            <a class="nav-link" href="#about">Certificates</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link contact-link text-white" href="#contact">Let’s talk ↗</a>
+                            <a class="nav-link contact-link" href="#contact">Let’s talk ↗</a>
                         </li>
                     </ul>
                 </div>
@@ -35,19 +36,21 @@
             <span class="sidebar-label d-block mb-3">Portfolio</span>
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link active" href="#home" aria-current="location">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#work">Selected work</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#about">Certificates</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Selected work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <main id="main">
-            <section class="welcome-screen container min-vh-100 d-flex flex-column justify-content-start pb-5" id="home" aria-labelledby="welcome-title">
-                <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                    <h1 class="mb-4 welcome-heading" id="welcome-title">welcome</h1>
-                    <div class="col-8 col-sm-6 col-md-4 mb-4">
-                        <img class="img-fluid d-block mx-auto rounded" src="assets/img/portrait.png" alt="Portrait of Patricia" fetchpriority="high">
-                    </div>
-                    <a class="btn btn-dark rounded-pill mb-4" href="assets/resume.pdf" download="Patricia-Jacinto-Resume.pdf">Download resume <span aria-hidden="true">&darr;</span></a>
+            <section class="welcome-screen" id="home" aria-labelledby="welcome-title">
+                <div class="welcome-banner text-center">
+                    <h1 class="welcome-heading m-0" id="welcome-title">Welcome to my portfolio!</h1>
+                </div>
+                <div class="welcome-stripes d-flex justify-content-center align-items-end">
+                    <img class="welcome-photo" src="assets/img/portrait.png" alt="Portrait of Patricia" fetchpriority="high">
+                </div>
+                <div class="welcome-actions d-flex flex-wrap justify-content-center align-items-center py-4 px-3">
+                    <a class="btn btn-dark rounded-pill" href="assets/resume.pdf" download="Patricia-Jacinto-Resume.pdf">Download resume <span aria-hidden="true">&darr;</span></a>
                     <a class="small" href="#work">SCROLL TO DISCOVER &darr;</a>
                 </div>
             </section>
